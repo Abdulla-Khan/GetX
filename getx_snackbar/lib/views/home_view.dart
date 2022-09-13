@@ -47,6 +47,9 @@ class HomeView extends StatelessWidget {
                       icon: Icon(Icons.home),
                       shouldIconPulse: true,
                       // leftBarIndicatorColor: Colors.white,
+                      // overlayBlur: 1,
+                      // overlayColor: Colors.grey,
+                      reverseAnimationCurve: Curves.easeOut,
                       mainButton: TextButton(
                           onPressed: () {
                             print('hemllo');
