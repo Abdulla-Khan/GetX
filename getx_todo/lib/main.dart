@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:getx_todo/view/splash_view.dart';
 
 import 'view/home_view.dart';
 
@@ -14,8 +15,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+      getPages: [
+        GetPage(name: '/home', page: () => HomeView()),
+        GetPage(name: '/', page: () => SplashScreen())
+      ],
       debugShowCheckedModeBanner: false,
-      home: HomeView(),
+      initialRoute: '/',
     );
   }
 }
